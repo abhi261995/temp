@@ -7,4 +7,8 @@ jobs:
    steps:
     - name: Dispalay the output of echo Commands
       run: echo "This is first workflow"
-      
+ mysecondshellexecution:
+      runs-on: windows-latest
+      steps:
+        - name: Display output of echo commands
+          run: echo "this is second workflow"
