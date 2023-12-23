@@ -1,0 +1,10 @@
+# Github workflow
+name: Run Shell Commands
+on: [push]
+jobs:
+ myfirst-shell-execution:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Dispalay the output of echo Commands
+      run: echo "This is first workflow"
+      
