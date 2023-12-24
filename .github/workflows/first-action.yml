@@ -1,14 +1,18 @@
-# Github workflow for push and pull
+# Github workflow for push and pull using cron (schedule job)
 name: Run Shell Commands
-on: [push,pull_request]
+on: 
+  push:
+  pull_request:
+  schedule:
+    - cron: '*/1 * * * *' 
 jobs:
  myfirst-shell-execution:
    runs-on: ubuntu-latest
    steps:
     - name: Dispalay the output of echo Commands
-      run: echo "This is first workflow"
+      run: echo "This is first updated workflow"
  mysecondshellexecution:
       runs-on: windows-latest
       steps:
         - name: Display output of echo commands
-          run: echo "this is second workflow"
+          run: echo "this is second updated workflow"
