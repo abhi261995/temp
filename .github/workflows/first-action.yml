@@ -1,6 +1,6 @@
-# Github workflow push request
+# Github workflow for push and pull
 name: Run Shell Commands
-on: [push]
+on: [push,pull_request]
 jobs:
  myfirst-shell-execution:
    runs-on: ubuntu-latest
