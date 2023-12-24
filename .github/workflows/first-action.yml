@@ -1,4 +1,4 @@
-# Github workflow
+# Github workflow push request
 name: Run Shell Commands
 on: [push]
 jobs:
