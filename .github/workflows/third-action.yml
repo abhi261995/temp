@@ -1,0 +1,10 @@
+name: Run third action command
+on: [push]
+jobs: 
+    third-job-command:
+        runs-on: ubuntu-latest
+        steps:
+           - name: Displaying the output
+             run: echo "Hello third action it is" 
+
+
