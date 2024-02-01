@@ -1,0 +1,4 @@
+name: New request
+ on:
+    push:    
+    pull_request:
