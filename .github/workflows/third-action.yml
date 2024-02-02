@@ -1,7 +1,10 @@
 name: Run third action command
-on: [push]
+on: 
+ push:
+  branches:
+   - 'pull-request-new'
 jobs: 
-    third-job-command:
+    third-job-command new branch:
         runs-on: ubuntu-latest
         steps:
            - name: Displaying the output
