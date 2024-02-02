@@ -1,6 +1,7 @@
 name: testing new branch
 on: 
  push:
+ pull_request:
   branches:
   - 'pull-request-new'
   
