@@ -4,7 +4,7 @@ on:
   branches:
    - 'pull-request-new'
 jobs: 
-    third-job-command new branch:
+    third-job-command_new_branch:
         runs-on: ubuntu-latest
         steps:
            - name: Displaying the output

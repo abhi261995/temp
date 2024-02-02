@@ -1,0 +1,13 @@
+name: testing new branch
+on: 
+ push:
+  branches:
+   pull-request-new
+ run-on: ubuntu-latest  
+ jobs:
+   testing job:
+    name: test 1
+    run: echo "Hello from test 1"
+    name: test 2
+    run: echo "Hello from test 2"
+    
