@@ -6,11 +6,9 @@ on:
   - 'pull-requet-new'
   
 jobs:
-   testing job:
-    runs-on: ubuntu-latest
-    steps:
-     - name: test 1
-       run: echo "Hello from test 1"
-     - name: test 2
-       run: echo "Hello from test 2"
+ testing:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Test 1
+      run: echo "This is first updated workflow"
     
