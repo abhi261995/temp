@@ -6,9 +6,8 @@ on:
   - 'pull-requet-new'
   
 jobs:
-  
    testing job:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
      - name: test 1
        run: echo "Hello from test 1"
