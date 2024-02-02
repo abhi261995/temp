@@ -2,9 +2,9 @@ name: testing new branch
 on: 
  push:
   branches:
-   pull-request-new
- run-on: ubuntu-latest  
- jobs:
+  - 'pull-request-new'
+  
+jobs:
   
    testing job:
     run-on: ubuntu-latest
